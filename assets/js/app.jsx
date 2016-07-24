@@ -9,7 +9,7 @@ module.exports = React.createClass({
     componentDidMount: function() {
         this.loadUserData()
     },
-            
+
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
@@ -36,9 +36,9 @@ module.exports = React.createClass({
     render: function() {
         return (
             <div>
-            <h1>You are now logged in, {this.state.user.username}</h1>
+            <h4> 안녕하세요, {this.state.user.username}님 로그인 되었습니다.</h4>
             <button onClick={this.logoutHandler}>Log out</button>
             </div>
-        )        
+        )
     }
 })

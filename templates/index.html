@@ -1,12 +1,21 @@
 {% load staticfiles %}
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Django React Auth</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
-    <div id="app"></div>
+   <div id = test>
+         <h4> log-in test </h4>
+        <div id="app"></div>
+        <div id="app_work"></div>
+   </div>
+
+
     <script src="{% static 'bundles/main.js' %}"></script>
+
+    <h4> REST API 테스트  </h4>
+    <h4><a href="{% url 'account-create2' %}"> 유저 생성 REST API테스트 페이지 </a></h4>
 </body>
 </html>

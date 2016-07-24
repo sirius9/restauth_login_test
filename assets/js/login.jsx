@@ -16,14 +16,14 @@ module.exports = React.createClass({
             this.context.router.replace('/app/')
         })
     },
-    
+
     render: function() {
         return (
             <form onSubmit={this.handleSubmit}>
                 <input type="text" placeholder="username" ref="username"/>
                 <input type="password" placeholder="password" ref="pass"/>
-                <input type="submit"/>
+                <input type="submit" placeholder="push"/>
             </form>
-        )    
+        )
     }
 })

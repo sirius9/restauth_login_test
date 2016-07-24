@@ -12,8 +12,8 @@ module.exports = {
                 if (cb) cb(false)
             }
         })
-    },        
-    
+    },
+
     logout: function() {
         delete localStorage.token
     },
@@ -37,5 +37,5 @@ module.exports = {
                 })
             }
         })
-    }, 
+    },
 }

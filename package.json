@@ -26,5 +26,8 @@
     "react-router": "^2.0.1",
     "webpack": "^1.12.14",
     "webpack-bundle-tracker": "0.0.93"
+  },
+  "devDependencies": {
+    "react-hot-loader": "^1.3.0"
   }
 }

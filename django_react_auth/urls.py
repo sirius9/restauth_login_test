@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.views.generic import TemplateView
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib import admin
 
 urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
     url(r'^app/', csrf_exempt(TemplateView.as_view(template_name='index.html'))),
     url(r'^api/', include('api.urls'))
 ]
-    
